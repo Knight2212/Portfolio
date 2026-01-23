@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600&family=Space+Grotesk:wght@500&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            padding: 40px;
+        }
+
+        .canvas {
+            width: 800px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 40px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PROJECT 2: LIFELINE (Medical) -->
+    <!-- P2_1: About / Philosophy -->
+    <div id="p2_about" class="canvas bg-[#0d1f22] flex items-center justify-center p-12">
+        <div class="text-center max-w-2xl">
+            <div class="text-teal-500 text-sm tracking-widest mb-6">OUR PHILOSOPHY</div>
+            <h2 class="text-4xl font-[Playfair_Display] text-white italic mb-8">"Healing is not just about the body, but
+                the connection between mind and movement."</h2>
+            <div class="grid grid-cols-2 gap-8 text-left mt-12">
+                <div class="border-l border-teal-500 pl-6">
+                    <h3 class="text-white text-lg mb-2">Holistic Care</h3>
+                    <p class="text-slate-400 text-sm">Integrating advanced neurology with traditional therapy.</p>
+                </div>
+                <div class="border-l border-teal-500 pl-6">
+                    <h3 class="text-white text-lg mb-2">Patient First</h3>
+                    <p class="text-slate-400 text-sm">Personalized recovery plans tailored to individual needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- P2_2: Service Detail -->
+    <div id="p2_service" class="canvas bg-[#0F292D] p-12 flex gap-12">
+        <div class="w-1/3 bg-teal-900/20 p-8 border border-teal-500/30">
+            <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-6 text-white font-bold">1
+            </div>
+            <h3 class="text-2xl text-white font-[Playfair_Display] mb-4">Neural Mapping</h3>
+            <p class="text-teal-200/60 text-sm leading-relaxed">
+                Using state-of-the-art brain imaging to identify conductivity blockages before treatment begins.
+            </p>
+        </div>
+        <div class="w-2/3 grid grid-cols-2 gap-4">
+            <div
+                class="bg-black/20 rounded-lg h-full border border-teal-500/10 flex items-center justify-center text-teal-500/20 text-4xl">
+                SCAN A</div>
+            <div
+                class="bg-black/20 rounded-lg h-full border border-teal-500/10 flex items-center justify-center text-teal-500/20 text-4xl">
+                SCAN B</div>
+        </div>
+    </div>
+
+    <!-- PROJECT 4: NEXUS (Branding) -->
+    <!-- P4_1: Brand Guide -->
+    <div id="p4_guide" class="canvas bg-slate-200 flex p-12 gap-8">
+        <div class="w-1/2 bg-white shadow-xl p-8 flex flex-col justify-between">
+            <div>
+                <div class="text-slate-900 font-bold text-2xl mb-2">NEXUS</div>
+                <div class="text-slate-400 text-xs tracking-widest">BRAND GUIDELINES 2024</div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex gap-4 items-center">
+                    <div class="w-12 h-12 bg-[#06b6d4]"></div>
+                    <div class="text-xs">
+                        <strong>Primary Cyan</strong><br>#06B6D4
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div class="w-12 h-12 bg-[#1e293b]"></div>
+                    <div class="text-xs">
+                        <strong>Dark Slate</strong><br>#1E293B
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 bg-slate-800 shadow-xl p-8 flex items-center justify-center">
+            <div class="text-white text-4xl font-bold tracking-tighter">NEXUS</div>
+        </div>
+    </div>
+    <!-- P4_2: Stationery -->
+    <div id="p4_stationery" class="canvas bg-slate-300 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute w-[800px] h-full bg-slate-100 rotate-12 transform translate-x-24"></div>
+        <div class="relative z-10 grid grid-cols-2 gap-8">
+            <div class="w-64 h-40 bg-white shadow-xl p-6 flex flex-col justify-between relative">
+                <div class="w-4 h-4 bg-cyan-500 rounded-full"></div>
+                <div class="text-right text-xs text-slate-500">John Doe<br>Director</div>
+            </div>
+            <div class="w-64 h-40 bg-[#1e293b] shadow-xl p-6 flex items-center justify-center">
+                <div class="text-white font-bold text-xl tracking-widest">NEXUS</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 5: AGENCY (Web) -->
+    <!-- P5_1: Team -->
+    <div id="p5_team" class="canvas bg-zinc-900 p-12">
+        <h2
+            class="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 mb-12">
+            THE MINDS.</h2>
+        <div class="flex gap-8">
+            <div
+                class="w-1/3 aspect-[3/4] bg-zinc-800 border-b-4 border-orange-500 grayscale hover:grayscale-0 transition duration-500 relative group overflow-hidden">
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-xl">ALEX</div>
+                    <div class="text-orange-500 text-sm">Creative Director</div>
+                </div>
+            </div>
+            <div
+                class="w-1/3 aspect-[3/4] bg-zinc-800 border-b-4 border-yellow-500 grayscale hover:grayscale-0 transition duration-500 relative group overflow-hidden">
+                <div class="absolute bottom-4 left-4">
+                    <div class="text-white font-bold text-xl">SARAH</div>
+                    <div class="text-yellow-500 text-sm">Lead Dev</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- P5_2: Process -->
+    <div id="p5_process" class="canvas bg-black flex flex-col justify-center p-12">
+        <div class="flex items-center gap-8 mb-12">
+            <div class="text-8xl font-bold text-zinc-800">1</div>
+            <div class="text-4xl text-white font-bold">Discovery &<br>Strategy</div>
+        </div>
+        <div class="flex items-center gap-8 mb-12 ml-24">
+            <div class="text-8xl font-bold text-orange-600">2</div>
+            <div class="text-4xl text-white font-bold">Design &<br>Prototyping</div>
+        </div>
+        <div class="flex items-center gap-8 ml-48">
+            <div class="text-8xl font-bold text-zinc-800">3</div>
+            <div class="text-4xl text-white font-bold">Development</div>
+        </div>
+    </div>
+
+    <!-- PROJECT 7: QUANTUM (App) -->
+    <!-- P7_1: Transfer -->
+    <div id="p7_transfer" class="canvas bg-[#0b0c15] flex items-center justify-center p-8">
+        <div class="w-72 h-[500px] bg-[#161722] rounded-3xl border-4 border-[#1f212e] p-6 relative overflow-hidden">
+            <div class="text-white text-center mb-8 font-medium">Send Money</div>
+            <div
+                class="w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-white">
+                JD</div>
+            <div class="text-center text-slate-400 text-sm mb-2">Sending to John</div>
+            <div class="text-center text-4xl text-white font-bold mb-8">$1,250.00</div>
+            <div class="space-y-3">
+                <div class="h-12 bg-[#1f212e] rounded-xl flex items-center px-4 text-slate-400 text-sm">Add Note...
+                </div>
+                <div class="h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold">Confirm
+                    Transfer</div>
+            </div>
+        </div>
+    </div>
+    <!-- P7_2: Stats -->
+    <div id="p7_stats" class="canvas bg-[#0b0c15] flex items-center justify-center p-8">
+        <div class="w-72 h-[500px] bg-[#161722] rounded-3xl border-4 border-[#1f212e] p-6">
+            <div class="text-white font-bold text-lg mb-6">Spending</div>
+            <div class="h-48 flex items-end justify-between gap-2 mb-8">
+                <div class="w-full bg-indigo-500/20 rounded-t h-[40%]"></div>
+                <div class="w-full bg-indigo-500/20 rounded-t h-[60%]"></div>
+                <div class="w-full bg-indigo-500 rounded-t h-[85%] shadow-[0_0_15px_rgba(99,102,241,0.5)]"></div>
+                <div class="w-full bg-indigo-500/20 rounded-t h-[50%]"></div>
+                <div class="w-full bg-indigo-500/20 rounded-t h-[30%]"></div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-between text-white text-sm">
+                    <span>Shopping</span>
+                    <span class="text-indigo-400">$420</span>
+                </div>
+                <div class="w-full h-1 bg-[#1f212e] rounded-full overflow-hidden">
+                    <div class="w-3/4 h-full bg-indigo-500"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 8: VELVET FORK (Restaurant) -->
+    <!-- P8_1: Menu -->
+    <div id="p8_menu" class="canvas bg-[#1a0f0f] flex p-12">
+        <div class="w-1/2 border-r border-red-900/30 pr-12">
+            <h2 class="text-red-500 font-[Playfair_Display] text-3xl mb-8 border-b border-red-900/30 pb-4">Entrées</h2>
+            <div class="space-y-8">
+                <div>
+                    <div class="flex justify-between text-white font-[Playfair_Display] text-xl mb-1">
+                        <span>Wagyu Beef Tartare</span>
+                        <span class="text-red-400">$45</span>
+                    </div>
+                    <p class="text-white/40 text-sm italic">Smoked egg yolk, capers, truffle oil.</p>
+                </div>
+                <div>
+                    <div class="flex justify-between text-white font-[Playfair_Display] text-xl mb-1">
+                        <span>Pan-Seared Scallops</span>
+                        <span class="text-red-400">$38</span>
+                    </div>
+                    <p class="text-white/40 text-sm italic">Cauliflower purée, crispy pancetta.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 pl-12 flex items-center justify-center">
+            <div class="w-64 h-64 rounded-full border border-red-900/30 flex items-center justify-center">
+                <div class="w-56 h-56 rounded-full bg-red-900/10"></div>
+            </div>
+        </div>
+    </div>
+    <!-- P8_2: Reservation -->
+    <div id="p8_reserve" class="canvas bg-[#1a0f0f] flex items-center justify-center">
+        <div class="w-[500px] border border-red-900/30 p-12 text-center">
+            <div class="text-red-500 uppercase tracking-widest text-xs mb-4">Reservations</div>
+            <h2 class="text-4xl text-white font-[Playfair_Display] mb-8">Book a Table</h2>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="border-b border-white/20 text-white/50 py-2 text-left">Date</div>
+                <div class="border-b border-white/20 text-white/50 py-2 text-left">Guests</div>
+                <div class="border-b border-white/20 text-white/50 py-2 text-left col-span-2">Time</div>
+            </div>
+            <button
+                class="bg-red-900/20 text-red-400 border border-red-900/50 px-8 py-3 uppercase tracking-wider text-xs hover:bg-red-900/40 transition">Check
+                Availability</button>
+        </div>
+    </div>
+
+    <!-- PROJECT 9: APOLLO (Fitness) -->
+    <!-- P9_1: Activity -->
+    <div id="p9_activity" class="canvas bg-black flex items-center justify-center p-8">
+        <div class="w-72 h-[500px] bg-neutral-900 rounded-3xl border-4 border-neutral-800 p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-white font-[Space_Grotesk] text-2xl font-bold">Activity</h2>
+                <div class="text-lime-400 text-xs px-2 py-1 bg-lime-400/10 rounded">Today</div>
+            </div>
+            <!-- Rings -->
+            <div class="relative w-48 h-48 mx-auto mb-8">
+                <div class="absolute inset-0 rounded-full border-4 border-neutral-800"></div>
+                <div class="absolute inset-2 rounded-full border-4 border-lime-500 border-t-transparent rotate-45">
+                </div>
+                <div class="absolute inset-6 rounded-full border-4 border-cyan-500 border-l-transparent -rotate-12">
+                </div>
+                <div class="absolute inset-10 rounded-full border-4 border-pink-500 border-b-transparent rotate-90">
+                </div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <span class="text-3xl text-white font-bold">84%</span>
+                    <span class="text-white/40 text-xs">GOAL</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center">
+                <div>
+                    <div class="text-lime-400 font-bold">500</div>
+                    <div class="text-white/40 text-[10px]">KCAL</div>
+                </div>
+                <div>
+                    <div class="text-cyan-400 font-bold">45</div>
+                    <div class="text-white/40 text-[10px]">MIN</div>
+                </div>
+                <div>
+                    <div class="text-pink-400 font-bold">12</div>
+                    <div class="text-white/40 text-[10px]">HRS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- P9_2: Run Map -->
+    <div id="p9_map" class="canvas bg-black flex items-center justify-center p-8">
+        <div class="w-72 h-[500px] bg-neutral-900 rounded-3xl border-4 border-neutral-800 relative overflow-hidden">
+            <!-- Fake Map BG -->
+            <div class="absolute inset-0 bg-[#111]">
+                <div class="absolute top-1/4 left-0 w-full h-[1px] bg-neutral-800"></div>
+                <div class="absolute top-2/4 left-0 w-full h-[1px] bg-neutral-800"></div>
+                <div class="absolute top-3/4 left-0 w-full h-[1px] bg-neutral-800"></div>
+                <div class="absolute left-1/3 top-0 h-full w-[1px] bg-neutral-800"></div>
+                <div class="absolute left-2/3 top-0 h-full w-[1px] bg-neutral-800"></div>
+
+                <!-- Path -->
+                <svg class="absolute inset-0 w-full h-full p-8">
+                    <path d="M 50 400 Q 100 300 150 200 T 250 100" stroke="#bef264" stroke-width="4" fill="none" />
+                </svg>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute bottom-0 w-full bg-neutral-900/90 backdrop-blur p-6 border-t border-neutral-800">
+                <div class="text-white font-[Space_Grotesk] text-3xl font-bold mb-1">5.2 KM</div>
+                <div class="text-white/50 text-sm mb-4">Evening Run</div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black font-bold">
+                        II</div>
+                    <div class="flex-1 bg-lime-500 rounded-full flex items-center justify-center text-black font-bold">
+                        RESUME</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 10: ONYX (Real Estate) -->
+    <!-- P10_1: Interior Grid -->
+    <div id="p10_interior" class="canvas bg-[#121212] p-8">
+        <div class="text-white font-serif text-2xl mb-8">The Penthouse Collection</div>
+        <div class="grid grid-cols-2 gap-4 h-[450px]">
+            <div class="bg-neutral-800 relative overflow-hidden group">
+                <div class="absolute bottom-6 left-6 z-10">
+                    <div class="text-white text-lg">Living Area</div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 gap-4">
+                <div class="bg-neutral-800"></div>
+                <div class="bg-neutral-800"></div>
+            </div>
+        </div>
+    </div>
+    <!-- P10_2: Agent -->
+    <div id="p10_agent" class="canvas bg-[#121212] flex items-center justify-center">
+        <div class="flex gap-12 items-center">
+            <div class="w-48 h-64 bg-neutral-800 grayscale"></div>
+            <div>
+                <div class="text-white/40 uppercase text-xs tracking-widest mb-4">Lead Agent</div>
+                <h2 class="text-4xl text-white font-serif mb-4">Sarah Jenkins</h2>
+                <div class="w-full h-[1px] bg-white/20 mb-6"></div>
+                <div class="text-white/60 text-sm space-y-2">
+                    <p>+1 (555) 000-0000</p>
+                    <p>sarah@onyx-estates.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 11: FLUX (Logo) -->
+    <!-- P11_1: Sheet -->
+    <div id="p11_sheet" class="canvas bg-white flex items-center justify-center p-24">
+        <div class="grid grid-cols-3 gap-16 w-full text-black">
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 border-4 border-black rounded-full"></div>
+                <div class="font-bold tracking-widest text-xs">CIRCLE</div>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 border-4 border-black rotate-45"></div>
+                <div class="font-bold tracking-widest text-xs">DIAMOND</div>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 border-4 border-black rounded-full flex items-center justify-center">
+                    <div class="w-8 h-8 bg-black rounded-full"></div>
+                </div>
+                <div class="font-bold tracking-widest text-xs">TARGET</div>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 bg-black flex items-center justify-center text-white font-bold text-2xl">A</div>
+                <div class="font-bold tracking-widest text-xs">TYPE A</div>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 border-t-4 border-b-4 border-black"></div>
+                <div class="font-bold tracking-widest text-xs">LINES</div>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-16 h-16 border-4 border-black rounded-tr-3xl"></div>
+                <div class="font-bold tracking-widest text-xs">CORNER</div>
+            </div>
+        </div>
+    </div>
+    <!-- P11_2: Signage -->
+    <div id="p11_sign" class="canvas bg-neutral-900 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-neutral-800 transform -skew-x-12 scale-150"></div>
+        <div class="relative w-64 h-32 bg-black shadow-2xl flex items-center justify-center border border-neutral-700">
+            <div class="text-white font-bold text-3xl tracking-[1em] ml-4">FLUX</div>
+            <div class="absolute -bottom-12 w-full flex justify-center">
+                <div class="w-2 h-12 bg-neutral-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 12: VORTEX (Poster) -->
+    <!-- P12_1: Variant -->
+    <div id="p12_poster" class="canvas bg-zinc-900 flex justify-center items-center py-8">
+        <div class="w-[350px] h-[500px] bg-black border border-white/10 p-4 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-purple-600 via-pink-600 to-orange-500 opacity-20"></div>
+            <!-- Spiral -->
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[50px] border-white/5 rounded-full">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border-[50px] border-white/5 rounded-full">
+            </div>
+
+            <div class="relative z-10 h-full flex flex-col justify-between">
+                <div class="text-white font-bold text-6xl leading-none mix-blend-difference">
+                    VOR<br>TEX
+                </div>
+                <div>
+                    <div class="w-full h-1 bg-white mb-2"></div>
+                    <div class="flex justify-between text-white text-xs font-bold uppercase">
+                        <span>Dec 12</span>
+                        <span>Pioneer Works</span>
+                        <span>NYC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- P12_2: Street -->
+    <div id="p12_street" class="canvas bg-[#222] flex gap-4 overflow-hidden relative">
+        <div class="w-1/3 h-full bg-[#111] flex items-center justify-center opacity-50 transform scale-90">
+            <div class="text-white/20 font-bold text-4xl -rotate-90">VORTEX</div>
+        </div>
+        <div
+            class="w-1/3 h-full bg-[#111] border-4 border-white/10 flex items-center justify-center relative shadow-2xl z-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 opacity-20"></div>
+            <div class="text-white font-bold text-4xl -rotate-90 mix-blend-overlay">VORTEX</div>
+        </div>
+        <div class="w-1/3 h-full bg-[#111] flex items-center justify-center opacity-50 transform scale-90">
+            <div class="text-white/20 font-bold text-4xl -rotate-90">VORTEX</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
