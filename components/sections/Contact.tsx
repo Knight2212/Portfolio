@@ -35,10 +35,10 @@ export default function Contact() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                        Let's <span className="text-electric-blue">Connect</span>
+                        Let&apos;s <span className="text-electric-blue">Connect</span>
                     </h2>
                     <p className="text-muted-gray text-xl max-w-3xl mx-auto leading-relaxed">
-                        Have a project in mind? Let's work together to create something amazing.
+                        Have a project in mind? Let&apos;s work together to create something amazing.
                     </p>
                 </motion.div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
                         <div>
                             <h3 className="text-3xl font-bold text-white mb-6">Get in Touch</h3>
                             <p className="text-muted-gray leading-relaxed mb-8">
-                                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
                             </p>
                         </div>
 

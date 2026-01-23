@@ -24,7 +24,7 @@ export default function About() {
                         About <span className="text-electric-blue">Me</span>
                     </h2>
                     <p className="text-muted-gray text-xl max-w-3xl mx-auto leading-relaxed">
-                        I'm a passionate graphic and web designer with over 3 years of experience creating
+                        I&apos;m a passionate graphic and web designer with over 3 years of experience creating
                         compelling visual identities and digital experiences. My work combines modern aesthetics
                         with strategic thinking to help brands stand out in the digital landscape.
                     </p>
