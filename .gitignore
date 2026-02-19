@@ -11,3 +11,4 @@ yarn-error.log*
 .env*.local
 .vercel
 .turbo
+public/images/backup/

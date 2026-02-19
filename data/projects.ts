@@ -42,6 +42,10 @@ export const projects: Project[] = [
         description: 'Streetwear e-commerce platform with bold red and black color scheme and urban fashion aesthetic.',
         image: '/images/portfolio_project_3.png',
         tags: ['E-commerce', 'Web Design', 'Fashion'],
+        gallery: [
+            '/images/swv_collection.png',
+            '/images/swv_product.png'
+        ]
     },
     {
         id: '4',
@@ -70,10 +74,15 @@ export const projects: Project[] = [
     {
         id: '6',
         title: 'Neo-Lumina E-commerce',
+
         category: 'Web Design',
         description: 'Modern e-commerce platform with dark theme and electric blue call-to-action elements.',
         image: '/images/portfolio_project_6.png',
         tags: ['E-commerce', 'Web Design', 'UI/UX'],
+        gallery: [
+            '/images/neo_cart.png',
+            '/images/neo_product.png'
+        ]
     },
     {
         id: '7',
